@@ -16,7 +16,7 @@ function methodB(){
 
     console.log("teste32");
 
-    let list = [1, 2, 3, 4, 5]
+    let list = [1, 2, 3, 4, 5];
 
     for(let item of list){
         console.log(item);

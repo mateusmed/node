@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +12,7 @@
     "express": "^4.17.1",
     "html-pdf": "^2.2.0",
     "nodemon": "^2.0.4",
-    "pdf-creator-node": "^1.4.2"
+    "pdf-creator-node": "^1.4.2",
+    "api-spec-converter": "^2.12.0"
   }
 }

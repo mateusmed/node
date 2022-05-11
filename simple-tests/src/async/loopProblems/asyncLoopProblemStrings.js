@@ -39,7 +39,7 @@ async function exampleFixProblem(list){
 
 async function main(){
 
-    let list = ["item1", "item2", "item3"]
+    let list = ["item1", "item2", "item3"];
     let response1 = await exampleProblemAsync(list);
     let response2 = await exampleFixProblem(list);
 
