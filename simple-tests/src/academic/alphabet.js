@@ -77,7 +77,7 @@ function getAllPossibilities(value){
     console.log(finalAlpha.length);
     console.log(finalAlpha);
 
-    saveFile(finalAlpha);
+    // saveFile(finalAlpha);
     return finalAlpha;
 }
 
@@ -91,18 +91,26 @@ function step(firstColumn, lastColumn, interval){
 
     // construir o intervalo
 
-    let index = possibilities.indexOf(firstColumn);
+    let indexFirst = possibilities.indexOf(firstColumn);
+    let indexLast = possibilities.indexOf(lastColumn);
 
-    for(let i = index; i <= possibilities.length; i = i + interval){
+    console.log("index first ", indexFirst);
+    console.log("index last ", indexLast);
+
+    possibilities = possibilities.slice(indexFirst, indexLast);
+
+    for(let i = 0; i <= possibilities.length; i = i + interval){
 
         console.log("==>", i);
-        list.push(possibilities[i]);
+        if(possibilities[i]){
+            list.push(possibilities[i]);
+        }
     }
 
     console.log(list);
 }
 
-step("zza", "zzz", 3);
+step("zza", "zzm", 3);
 
 /*
 let response = getLetterAfter("ac", 2);
